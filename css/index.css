@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "CustomPoppinsFont";
+    src: url("../assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+    font-weight: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CustomPoppinsFont";
+    src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CustomPoppinsFont";
+    src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: black;
+    font-style: normal;
+}
+
+.wrapper{
+    width: 99%;
+    height: 99vh;
+    border: 2px solid rgb(197, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    font-family: 'CustomPoppinsFont';
+}
+.wrapper .inner-wrapper{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 20px 20px 150px 20px;
+    background-color: white;
+    border: 2px solid rgba(161, 161, 161, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.wrapper .inner-wrapper form{
+    width: 85%;
+    height: fit-content;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+}
+.wrapper .inner-wrapper form span{
+    width: 24%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    gap: 7px;
+}
+.wrapper .inner-wrapper form span label{
+    color: hsl(0, 1%, 44%);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+.wrapper .inner-wrapper form span input{
+    border: 0.5px solid hsl(0, 0%, 86%);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wrapper .inner-wrapper .arrow{
+    /* border: 2px solid rgb(0, 255, 238); */
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+.wrapper .inner-wrapper .arrow hr{
+    border: 0.1px solid hsl(0, 0%, 86%);
+    width: 80%;
+    height: 0.1px;
+    background-color: hsl(0, 0%, 86%);
+}
+.wrapper .inner-wrapper .arrow img{
+    width: 40px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: hsl(259, 100%, 65%);
+}

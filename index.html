@@ -5,33 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- css styling -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- fonts linking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <section class="wrapper">
+    <section class="inner-wrapper">
+      <form action="">
+        <span>
+          <label for="">Day</label>
+          <input type="text" />
+        </span>
+        <span>
+          <label for="">Month</label>
+          <input type="text" />
+        </span>
+        <span>
+          <label for="">Year</label>
+          <input type="text" />
+        </span>
+      </form>
 
-  Day
-  DD
+      <!-- <hr/> -->
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+      <section class="arrow">
+        <hr>
+        <img src="./assets/images/icon-arrow.svg" alt="arrow-svg"/>
+      </section>
+    </section>
+  </section>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
