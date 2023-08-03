@@ -123,6 +123,7 @@
 @media (min-width: 700px) and (max-width: 899px) {
     .wrapper .inner-wrapper {
         width: 75%;
+        padding: 20px 0px;
     }
 
     .wrapper .inner-wrapper .sub
@@ -150,7 +151,8 @@
 @media (min-width: 360px) and (max-width: 499px) {
     .wrapper .inner-wrapper {
         width: 90%;
-        height: 65%;
+        height: 75%;
+        padding: 20px 0px;
     }
     .wrapper .inner-wrapper .sub{
         height: fit-content;
