@@ -23,7 +23,15 @@ const dayValue = (e) => {
 
 const monthValue = (e) => {
   console.log(e.target.value);
-  monthResult.textContent = current_month - e.target.value;
+  const getMonth = e.target.value 
+  if( getMonth > 12) {
+    monthResult.textContent = '- -'
+    //add validation error   use calender month, if is not a number , should be a number format 
+  } else {
+    monthResult.textContent = e.target.value;
+  }
+ 
+
 };
 
 const yearValue = (e) => {

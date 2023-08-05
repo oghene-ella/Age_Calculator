@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 @font-face {
     font-family: "CustomPoppinsFont";
     src: url("../assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
@@ -34,7 +33,7 @@
 }
 .wrapper .inner-wrapper{
     width: 50%;
-    height: 70%;
+    /* height: 70%;  removed height */
     border-radius: 20px 20px 150px 20px;
     background-color: white;
     border: 2px solid rgba(161, 161, 161, 0.2);
@@ -46,14 +45,22 @@
 }
 .wrapper .inner-wrapper .sub {
     width: 85%;
-    height: 60vh;
+    /* height: 60vh; removed height*/ 
     padding: 10px;
 }
+/* sub flex style */
+.sub {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .wrapper .inner-wrapper .sub form{
     width: 100%;
     height: fit-content;
     display: flex;
     gap: 20px;
+    padding: 1em
 }
 .wrapper .inner-wrapper .sub form span{
     width: 24%;
@@ -174,4 +181,12 @@
     .wrapper .inner-wrapper .sub .birthday-result span p {
         font-size: 36px;
     }
+}
+
+
+/* remove number scroll  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
