@@ -13,7 +13,8 @@ const yearResult = document.querySelector(".num-years");
 const the_date = new Date();
 const current_year = the_date.getFullYear();
 const current_day = the_date.getDate();
-const current_month = the_date.getMonth();
+const current_month = the_date.getMonth() + 1 ;
+console.log(current_month);
 
 const dayValue = (e) => {
     console.log(e.target.value);
@@ -23,7 +24,7 @@ const dayValue = (e) => {
 
 const monthValue = (e) => {
   console.log(e.target.value);
-  monthResult.textContent = current_month - e.target.value;
+  monthResult.textContent = e.target.value;
 };
 
 const yearValue = (e) => {
